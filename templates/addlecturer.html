@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+ {% include "Nav.html" %}
+<head>
+    <meta charset="UTF-8">
+    <title>Добавить преподавателя</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+    <title>Добавить</title>
+    <style>
+       form {
+          margin: 20px;
+       }
+       .err {
+        margin: 20px;
+       }
+       .form-group{
+           max-width: 500px;
+       }
+       </style>
+</head>
+<body>
+<form action="" method="post">
+  <ul>
+      <p>
+          <label for="lecturer">ФИО:</label>
+          <input type="text" name="lecturer">
+      </p>
+          <button type="submit" class="btn btn-primary">Добавить</button>
+
+  </ul>
+</form>
+</body>
+</html>

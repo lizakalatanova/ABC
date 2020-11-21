@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Group</title>
+        <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+</head>
+<body>
+ {% include "Nav.html" %}
+
+    <div class = "container">
+        <div class = "cher2" >
+            <h2> Group</h2>
+           <table class="table table-hover">
+
+    <thead>
+    <tr>
+        <th scope="col">Группа</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for group in groups %}
+    <tr class="table-light">
+        <td>{{ group.groups }}</td>
+    {% endfor %}
+    </tr>
+    </tbody>
+</table>
+        </div>
+    </div>
+</body>
+</html>
